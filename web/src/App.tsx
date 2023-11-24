@@ -1,3 +1,5 @@
+import {BrowserRouter, useOutlet, useRoutes} from "react-router-dom";
+import {RouteObject} from "react-router/dist/lib/context";
 import './App.css'
 
 const Header = () => {
@@ -18,7 +20,10 @@ const Header = () => {
 }
 
 const BodyContent = () => {
-    return <div className={'flex-grow container'}>Body</div>
+    const outlet = useOutlet();
+    return <div className={'flex-grow container text-black'}>
+        {outlet}
+    </div>
 }
 const Footer = () => {
     return <div className={'bg-primary px-4 py-1'}>
@@ -36,12 +41,42 @@ const Footer = () => {
     </div>
 }
 
+const BaseWrapper = () => {
+    return <main className={'flex flex-col min-h-screen min-w-full dark'}>
+        <Header/>
+        <BodyContent/>
+        <Footer/>
+    </main>;
+}
+
+const MainPage = () => {
+    return <div>
+        MAIN PAGE
+    </div>
+}
+
+const RouterMapper = () => {
+    const routeObjects: RouteObject[] = [
+        {
+            path: '',
+            element: <BaseWrapper/>,
+            children: [
+                {
+                    path: '/main',
+                    element: <MainPage/>
+                }
+            ]
+        }
+    ]
+    return useRoutes(routeObjects);
+}
+
 function App() {
     return (
         <main className={'flex flex-col min-h-screen min-w-full dark'}>
-            <Header/>
-            <BodyContent/>
-            <Footer/>
+            <BrowserRouter>
+                <RouterMapper/>
+            </BrowserRouter>
         </main>
     )
 }
