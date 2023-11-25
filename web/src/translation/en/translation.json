@@ -30,5 +30,26 @@
     "callToActionTitle": "Get Started Now",
     "callToActionSubtitle": "Join the Cryptocurrency Trading Revolution",
     "contactUsOnTelegram": "Contact Us on Telegram"
+  },
+  "goodLinksPage": {
+    "title": "Useful Links",
+    "mexc": "MEXC Exchange",
+    "bot": "Bot",
+    "botChat": "Bot User Chat",
+    "cryptoChat": "Free Crypto Chat",
+    "discord": "Our Discord"
+  },
+  "tariffsPage": {
+    "title": "Our Tariffs",
+    "trialTitle": "Trial",
+    "trialDuration": "2 days",
+    "trialDescription": "Experience all the benefits of our Premium tariff for free for 2 days.",
+    "trialButton": "Get Trial Period",
+    "premiumTitle": "Premium",
+    "premiumDuration": "30 days",
+    "premiumPrice": "20 USDT",
+    "premiumDescription": "Get full access to our exclusive features and support.",
+    "premiumButton": "Join @JumpAttacker",
+    "free": "Free"
   }
 }

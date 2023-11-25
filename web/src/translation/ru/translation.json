@@ -30,5 +30,26 @@
     "callToActionTitle": "Начните сейчас",
     "callToActionSubtitle": "Присоединяйтесь к революции в торговле криптовалютой",
     "contactUsOnTelegram": "Свяжитесь с нами в Telegram"
+  },
+  "goodLinksPage": {
+    "title": "Полезные Ссылки",
+    "mexc": "Криптобиржа MEXC",
+    "bot": "Бот",
+    "botChat": "Чат Юзеров Бота",
+    "cryptoChat": "Свободный Чат По Крипте",
+    "discord": "Наш Дискорд"
+  },
+  "tariffsPage": {
+    "title": "Наши Тарифы",
+    "trialTitle": "Пробный",
+    "trialDuration": "2 дня",
+    "trialDescription": "Испытайте все преимущества нашего Premium тарифа бесплатно в течение 2 дней.",
+    "trialButton": "Получить пробный период",
+    "premiumTitle": "Premium",
+    "premiumDuration": "30 дней",
+    "premiumPrice": "20 USDT",
+    "premiumDescription": "Получите полный доступ к нашим эксклюзивным функциям и поддержке.",
+    "premiumButton": "Подключиться @JumpAttacker",
+    "free": "Бесплатно"
   }
 }

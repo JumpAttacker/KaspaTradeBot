@@ -31,6 +31,14 @@ interface Resources {
       "callToActionTitle": "Get Started Now",
       "callToActionSubtitle": "Join the Cryptocurrency Trading Revolution",
       "contactUsOnTelegram": "Contact Us on Telegram"
+    },
+    "goodLinksPage": {
+      "title": "Useful Links",
+      "mexc": "MEXC Exchange",
+      "bot": "Bot",
+      "botChat": "Bot User Chat",
+      "cryptoChat": "Free Crypto Chat",
+      "discord": "Discord"
     }
   }
 }
