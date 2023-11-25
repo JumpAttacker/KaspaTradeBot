@@ -11,12 +11,12 @@ export const Header = () => {
     };
 
     return <div className={'bg-primary px-4 py-4'}>
-        <div className="container flex flex-row flex-nowrap justify-between">
+        <div className="container flex flex-row flex-wrap justify-between">
             <div className={cn('text-xl flex flex-row gap-2 items-center')}>
                 <Kaspa className={'h-6 w-6'}/>
                 Kaspa Trade Bot
             </div>
-            <div className={'flex flex-row flex-nowrap gap-4'}>
+            <div className={'flex flex-row flex-wrap gap-4'}>
                 <NavLink to={'/'}>{t('navigation.aboutBot')}</NavLink>
                 <NavLink to={'/commands'}>{t('navigation.commands')}</NavLink>
                 <NavLink to={'/faq'}>{t('navigation.faq')}</NavLink>
