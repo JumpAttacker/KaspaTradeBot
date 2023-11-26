@@ -4,7 +4,7 @@ import './translation/i18n.ts';
 function App() {
     return (
         <main className={'flex flex-col min-h-screen min-w-full dark'}>
-            <BrowserRouter basename={'/KaspaTradeBot'}>
+            <BrowserRouter basename={'/KaspaTradeBot/'}>
                 <RouterMapper/>
             </BrowserRouter>
         </main>

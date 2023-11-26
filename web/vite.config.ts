@@ -8,7 +8,7 @@ export default defineConfig({
     svgr(),
       react()
   ],
-  base: '/KaspaTradeBot',
+  base: '/KaspaTradeBot/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
