@@ -15,6 +15,7 @@ export const Header = () => {
             <div className={cn('text-xl flex flex-row gap-2 items-center')}>
                 <Kaspa className={'h-6 w-6'}/>
                 Kaspa Trade Bot
+                <span className={'text-red-200 '}>FREE BETA TEST</span>
             </div>
             <div className={'flex flex-row flex-wrap gap-4'}>
                 <NavLink to={'/'}>{t('navigation.aboutBot')}</NavLink>

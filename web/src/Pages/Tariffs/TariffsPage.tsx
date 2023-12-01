@@ -10,7 +10,8 @@ export const TariffsPage = () => {
             <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-lg p-6 hover:-translate-y-1 transition duration-300">
                 <h3 className="text-xl font-semibold text-primary mb-4 text-center">{t('tariffsPage.trialTitle')}</h3>
                 <div className="text-center mb-4">
-                    <span className="text-lg font-medium">{t('tariffsPage.trialDuration')}</span> -
+                    <span className="text-lg font-medium line-through">{t('tariffsPage.trialDuration')}</span>
+                    <span className="text-lg font-bold ml-1">OPEN BETA</span> -
                     <span className="text-lg font-medium text-accent"> {t('tariffsPage.free')}</span>
                 </div>
                 <p className="text-center mb-4">{t('tariffsPage.trialDescription')}</p>
