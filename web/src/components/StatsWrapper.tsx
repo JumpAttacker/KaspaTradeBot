@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import Background from "../assets/stats_background.png?react";
 
 interface StatsProps {
