@@ -17,6 +17,12 @@ export default {
             },
         },
         extend: {
+            fontFamily: {
+                sans: ['Inter', 'sans-serif']
+            },
+            boxShadow: {
+                'custom': '0px 4px 4px rgba(0, 0, 0, 0.25)'
+            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",

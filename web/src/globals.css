@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,5 +58,37 @@
   }
   body {
     @apply bg-background text-white;
+  }
+}
+
+@layer components {
+  .content-box {
+    fill: rgba(32, 32, 32, 0.90);
+    stroke-width: 1.2px;
+    stroke: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    background: rgba(32, 32, 32, 0.9);
+    outline: 2px solid rgba(255, 255, 255, 0.31);
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1003' height='424' viewBox='0 0 1003 424' fill='none'%3E%3Cg filter='url(%23filter0_bd_453_2135)'%3E%3Cpath d='M43 54C43 47.3726 48.3726 42 55 42H948C954.627 42 960 47.3726 960 54V368C960 374.627 954.627 380 948 380H55C48.3726 380 43 374.627 43 368V54Z' fill='%23202020' fill-opacity='0.77' shape-rendering='crispEdges'/%3E%3Cpath d='M43.6 54C43.6 47.704 48.704 42.6 55 42.6H948C954.296 42.6 959.4 47.704 959.4 54V368C959.4 374.296 954.296 379.4 948 379.4H55C48.7039 379.4 43.6 374.296 43.6 368V54Z' stroke='white' stroke-opacity='0.31' stroke-width='1.2' shape-rendering='crispEdges'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_bd_453_2135' x='0.299999' y='0.299999' width='1002.4' height='423.4' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='4'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_453_2135'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='21.35'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.075 0 0 0 0 1 0 0 0 0 0.843662 0 0 0 0.15 0'/%3E%3CfeBlend mode='normal' in2='effect1_backgroundBlur_453_2135' result='effect2_dropShadow_453_2135'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect2_dropShadow_453_2135' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");*/
+  }
+  .content-box__title {
+    color: #FFF;
+    text-shadow: 0px 0px 27.8px rgba(255, 255, 255, 0.40);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .highlight {
+    color: #13FFD7;
+    text-shadow: 0px 0px 27.8px rgba(19, 255, 215, 0.40);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .percent-block {
+    text-shadow: 0px 0px 4.1px rgba(0, 0, 0, 0.92);
   }
 }

@@ -1,6 +1,8 @@
 import {useTranslation} from "react-i18next";
 import {motion, Variants} from "framer-motion";
 import {useState} from "react";
+import {useSearchParams} from "react-router-dom";
+import StatsWrapper from "@/components/StatsWrapper.tsx";
 
 
 const container = {
@@ -146,6 +148,45 @@ const CallToActionSection = () => {
 
 export const MainPage = () => {
     const [showFeatures, setShowFeatures] = useState(false);
+    const [searchParams] = useSearchParams();
+    const mode = searchParams.get("mode");
+    if (mode === 'screen') {
+        const type = searchParams.get("type");
+        if (type === 'stats') {
+            const dailyDeals = Number(searchParams.get("dailyDeals"));
+            const dailyProfit = Number(searchParams.get("dailyProfit"))!;
+            // const dailyPotentialLosses = Number(searchParams.get("dailyPotentialLosses"))!;
+            const totalProfit = Number(searchParams.get("totalProfit"))!;
+            // const totalPotentialLosses = Number(searchParams.get("totalPotentialLosses"))!;
+            const totalCancelledOrders = Number(searchParams.get("totalCancelledOrders"))!;
+            const dailyCancelledOrders = Number(searchParams.get("dailyCancelledOrders"))!;
+            const dailyTradesMoreThen = Number(searchParams.get("dailyTradesMoreThen"))!;
+            const dailyTradesMorePercent = Number(searchParams.get("dailyTradesMorePercent"))!;
+            const dailyProfitMorePercent = Number(searchParams.get("dailyProfitMorePercent"))!;
+            const dailyProfitMoreThen = Number(searchParams.get("dailyProfitMoreThen"))!;
+            const lang = searchParams.get("lang") as 'ru' | 'en';
+
+            // example of url with parameters
+            // http://localhost:5173/KaspaTradeBot/?mode=screen&type=stats&dailyDeals=100&dailyProfit=1000&dailyTradesMoreThen=200&totalProfit=2000&dailyTradesMorePercent=300&totalCancelledOrders=300&dailyCancelledOrders=300&lang=ru&dailyProfitMorePercent=300&dailyProfitMoreThen=300
+
+            return <div className={'mt-10'}>
+                <StatsWrapper
+                    dailyDeals={dailyDeals}
+                    dailyProfit={dailyProfit}
+                    totalProfit={totalProfit}
+                    totalCancelledOrders={totalCancelledOrders}
+                    dailyCancelledOrders={dailyCancelledOrders}
+                    lang={lang}
+                    dailyTradesMoreThen={dailyTradesMoreThen}
+                    dailyTradesMorePercent={dailyTradesMorePercent}
+                    dailyProfitMorePercent={dailyProfitMorePercent}
+                    dailyProfitMoreThen={dailyProfitMoreThen}
+                />
+            </div>
+
+        }
+
+    }
     return <div className="flex flex-col">
         <HeroSection setShowFeatures={setShowFeatures}/>
         {showFeatures && <FeaturesBlock/>}
