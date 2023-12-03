@@ -168,8 +168,9 @@ export const MainPage = () => {
 
             // example of url with parameters
             // http://localhost:5173/KaspaTradeBot/?mode=screen&type=stats&dailyDeals=100&dailyProfit=1000&dailyTradesMoreThen=200&totalProfit=2000&dailyTradesMorePercent=300&totalCancelledOrders=300&dailyCancelledOrders=300&lang=ru&dailyProfitMorePercent=300&dailyProfitMoreThen=300
+            // http://localhost:5173/KaspaTradeBot/?mode=screen&type=stats&dailyDeals=11&dailyProfit=2.53223&dailyTradesMoreThen=8&totalProfit=20.81581&dailyTradesMorePercent=300&totalCancelledOrders=0&dailyCancelledOrders=0&lang=ru&dailyProfitMorePercent=0.5223064516129032258064516129&dailyProfitMoreThen=2.0099235483870967741935483871
 
-            return <div className={'mt-10'}>
+            return <div className={''}>
                 <StatsWrapper
                     dailyDeals={dailyDeals}
                     dailyProfit={dailyProfit}
